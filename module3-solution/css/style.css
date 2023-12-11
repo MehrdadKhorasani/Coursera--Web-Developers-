@@ -1,0 +1,14 @@
+.row {
+  margin-bottom: 15px;
+}
+
+.row > div {
+  border: 2px solid rgb(46, 45, 45);
+  background-color: beige;
+}
+
+@media (768px >= width) {
+  .col-sm-12 {
+    text-align: center;
+  }
+}
