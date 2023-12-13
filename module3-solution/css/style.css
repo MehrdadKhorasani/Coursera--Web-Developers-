@@ -7,6 +7,16 @@ body {
   font-family: "Exo 2", sans-serif;
 }
 
+.brand-link {
+  font-size: 34px;
+  color: #313131;
+  margin-left: 30px;
+}
+
+.brand-link:hover {
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
   margin: 50px;
@@ -24,19 +34,9 @@ p {
   margin: 30px;
 }
 
-h2 {
-  margin-left: 30px;
-}
-
-#content-container {
+.content-container {
   margin-bottom: 10px;
   background-color: #fff;
   padding-top: 10px;
   border-radius: 20px;
-}
-
-#nav-dropdown {
-  background: none;
-  border: none;
-  margin-right: 30px;
 }
