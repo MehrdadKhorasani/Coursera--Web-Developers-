@@ -97,7 +97,7 @@ $(function () {
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
         // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
         // variable's name implies it expects.
-        // var chosenCategoryShortName = .....
+        // var chosenCategoryShortName = ....
         var chosenCategoryShortName =
           chooseRandomCategory(categories).short_name;
         // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -148,7 +148,7 @@ $(function () {
   dc.loadMenuItems = function (categoryShort) {
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
-      menuItemsUrl + categoryShort,
+      menuItemsUrl + categoryShort + ".json",
       buildAndShowMenuItemsHTML
     );
   };
@@ -279,7 +279,7 @@ $(function () {
       html = insertProperty(html, "description", menuItems[i].description);
 
       // Add clearfix after every second menu item
-      if (i % 2 != 0) {
+      if (i % 2 !== 0) {
         html +=
           "<div class='clearfix visible-lg-block visible-md-block'></div>";
       }
